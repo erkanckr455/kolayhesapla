@@ -111,6 +111,14 @@ export default function Home() {
     Ev satış fiyatına göre tapu harcını hesapla
   </p>
 </a>
+<a href="/arac-km-maliyeti" className="bg-white p-6 rounded-xl shadow hover:shadow-xl transition">
+  <h3 className="text-xl font-semibold mb-2">
+    Araç KM Maliyeti
+  </h3>
+  <p className="text-gray-500">
+    Aracınızın kilometre başına yakıt maliyetini hesaplayın
+  </p>
+</a>
 
         </div>
 
