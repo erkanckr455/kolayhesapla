@@ -103,6 +103,14 @@ export default function Home() {
     Brüt maaşa göre net maaşı hesapla
   </p>
 </a>
+<a href="/tapu-harci-hesaplama" className="bg-white p-6 rounded-xl shadow hover:shadow-xl transition">
+  <h3 className="text-xl font-semibold mb-2">
+    Tapu Harcı Hesaplama
+  </h3>
+  <p className="text-gray-500">
+    Ev satış fiyatına göre tapu harcını hesapla
+  </p>
+</a>
 
         </div>
 
