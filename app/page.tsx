@@ -127,6 +127,14 @@ export default function Home() {
     Maliyet ve satış fiyatına göre kar hesapla
   </p>
 </a>
+<a href="/mevduat-faiz-hesaplama" className="bg-white p-6 rounded-xl shadow hover:shadow-xl transition">
+  <h3 className="text-xl font-semibold mb-2">
+    Mevduat Faiz Getirisi
+  </h3>
+  <p className="text-gray-500">
+    Anapara ve faiz oranına göre net getiriyi hesapla
+  </p>
+</a>
 
         </div>
 
