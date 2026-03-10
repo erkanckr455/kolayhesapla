@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "KolayHesapla - Kredi, KDV, Yüzde ve Finans Hesaplama Araçları",
   description:
     "Kredi hesaplama, KDV hesaplama, yüzde hesaplama, hisse kar zarar ve temettü hesaplama araçları. Tüm finans hesaplamaları tek yerde.",
@@ -24,38 +24,32 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className="bg-gray-100">
+    <html lang="tr">
+      <body className={`${geistSans.variable} ${geistMono.variable} bg-gray-100`}>
+        <nav className="bg-white shadow-md">
+          <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between">
+            <a href="/" className="text-xl font-bold">
+              KolayHesapla
+            </a>
 
-<nav className="bg-white shadow-md">
-  <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between">
+            <div className="space-x-6">
+              <a href="/kredi-hesaplama" className="hover:text-blue-600">
+                Kredi
+              </a>
 
-    <a href="/" className="text-xl font-bold">
-      KolayHesapla
-    </a>
+              <a href="/kdv-hesaplama" className="hover:text-blue-600">
+                KDV
+              </a>
 
-    <div className="space-x-6">
+              <a href="/hisse-kar-zarar" className="hover:text-blue-600">
+                Hisse
+              </a>
+            </div>
+          </div>
+        </nav>
 
-      <a href="/kredi-hesaplama" className="hover:text-blue-600">
-        Kredi
-      </a>
-
-      <a href="/kdv-hesaplama" className="hover:text-blue-600">
-        KDV
-      </a>
-
-      <a href="/hisse-kar-zarar" className="hover:text-blue-600">
-        Hisse
-      </a>
-
-    </div>
-
-  </div>
-</nav>
-
-{children}
-
-</body>
+        {children}
+      </body>
     </html>
   );
 }
