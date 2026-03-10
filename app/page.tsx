@@ -87,6 +87,14 @@ export default function Home() {
     Gram altının toplam değerini hesapla
   </p>
 </a>
+<a href="/dolar-hesaplama" className="bg-white p-6 rounded-xl shadow hover:shadow-xl transition">
+  <h3 className="text-xl font-semibold mb-2">
+    Dolar Hesaplama
+  </h3>
+  <p className="text-gray-500">
+    Doların TL karşılığını hesapla
+  </p>
+</a>
 
         </div>
 
