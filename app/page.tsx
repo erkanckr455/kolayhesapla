@@ -95,6 +95,14 @@ export default function Home() {
     Doların TL karşılığını hesapla
   </p>
 </a>
+<a href="/maas-hesaplama" className="bg-white p-6 rounded-xl shadow hover:shadow-xl transition">
+  <h3 className="text-xl font-semibold mb-2">
+    Net Maaş Hesaplama
+  </h3>
+  <p className="text-gray-500">
+    Brüt maaşa göre net maaşı hesapla
+  </p>
+</a>
 
         </div>
 
