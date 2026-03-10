@@ -79,6 +79,14 @@ export default function Home() {
               Yüzde artış ve indirim hesapla
             </p>
           </a>
+<a href="/altin-hesaplama" className="bg-white p-6 rounded-xl shadow hover:shadow-xl transition">
+  <h3 className="text-xl font-semibold mb-2">
+    Altın Hesaplama
+  </h3>
+  <p className="text-gray-500">
+    Gram altının toplam değerini hesapla
+  </p>
+</a>
 
         </div>
 
