@@ -44,6 +44,9 @@ export default function RootLayout({
               <a href="/hisse-kar-zarar" className="hover:text-blue-600">
                 Hisse
               </a>
+<a href="/faiz-hesaplama" className="hover:text-blue-600">
+  Faiz
+</a>
             </div>
           </div>
         </nav>
