@@ -119,6 +119,14 @@ export default function Home() {
     Aracınızın kilometre başına yakıt maliyetini hesaplayın
   </p>
 </a>
+<a href="/kar-zarar-hesaplama" className="bg-white p-6 rounded-xl shadow hover:shadow-xl transition">
+  <h3 className="text-xl font-semibold mb-2">
+    Kar / Zarar Hesaplama
+  </h3>
+  <p className="text-gray-500">
+    Maliyet ve satış fiyatına göre kar hesapla
+  </p>
+</a>
 
         </div>
 
