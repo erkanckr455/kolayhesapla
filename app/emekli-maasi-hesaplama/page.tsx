@@ -34,18 +34,20 @@ export default function EmekliMaasiHesaplama() {
 
         <div>
           <label className="block text-sm font-semibold text-gray-700 mb-2">
-            Mevcut Maaş (TL)
+            Mevcut Emekli Maaşı
           </label>
 
           <input
             id="maas"
             type="number"
-            placeholder="Örn: 12000"
+            placeholder="Örn: 15000"
             className="w-full rounded-xl border border-gray-300 bg-gray-50 px-4 py-3 text-lg outline-none focus:border-blue-500 focus:bg-white"
           />
+
         </div>
 
         <div>
+
           <label className="block text-sm font-semibold text-gray-700 mb-2">
             Zam Oranı (%)
           </label>
@@ -56,6 +58,7 @@ export default function EmekliMaasiHesaplama() {
             placeholder="Örn: 25"
             className="w-full rounded-xl border border-gray-300 bg-gray-50 px-4 py-3 text-lg outline-none focus:border-blue-500 focus:bg-white"
           />
+
         </div>
 
         <button
@@ -72,11 +75,11 @@ export default function EmekliMaasiHesaplama() {
         <div className="mt-8 rounded-2xl border border-blue-200 bg-blue-50 p-5">
 
           <p className="text-lg font-semibold text-blue-900 mb-3">
-            Yeni Emekli Maaşı
+            Zamlı Emekli Maaşı
           </p>
 
           <p className="text-gray-800">
-            <strong>Maaşınız:</strong> {sonuc}
+            <strong>Yeni Maaş:</strong> {sonuc}
           </p>
 
         </div>
@@ -86,22 +89,32 @@ export default function EmekliMaasiHesaplama() {
       <div className="mt-10 text-gray-700 leading-7">
 
         <h2 className="text-xl font-semibold mb-3">
-          Emekli Maaşı Zam Hesaplama Nasıl Yapılır?
+          Emekli Maaşı Zam Hesaplama
         </h2>
 
         <p className="mb-4">
-          Emekli maaşı zam hesaplama işlemi mevcut maaşın belirli bir zam oranı
-          ile artırılması ile yapılır. Örneğin 12000 TL maaşa %25 zam yapılırsa
-          yeni maaş 15000 TL olur.
+          Emekli maaşı zam hesaplama işlemi mevcut maaşın belirli bir oranla
+          artırılması ile yapılır. Emekli maaşlarına yapılan zamlar genellikle
+          enflasyon oranı ve refah payı dikkate alınarak belirlenir.
         </p>
 
         <h2 className="text-xl font-semibold mb-3">
-          Emekli Maaşı Hesaplama Örneği
+          Emekli Maaşı Zam Hesabı Nasıl Yapılır?
+        </h2>
+
+        <p className="mb-4">
+          Zam hesaplaması yapılırken mevcut emekli maaşı zam oranı ile
+          çarpılarak yeni maaş bulunur. Örneğin 15000 TL emekli maaşına %25
+          zam yapılırsa yeni maaş 18750 TL olur.
+        </p>
+
+        <h2 className="text-xl font-semibold mb-3">
+          Örnek Emekli Maaşı Zam Hesabı
         </h2>
 
         <p>
-          15000 TL emekli maaşına %20 zam yapılırsa yeni maaş:
-          15000 × 1.20 = 18000 TL olur.
+          12000 TL emekli maaşına %20 zam yapılırsa yeni maaş 14400 TL olur.
+          15000 TL emekli maaşına %25 zam yapılırsa yeni maaş 18750 TL olur.
         </p>
 
       </div>
