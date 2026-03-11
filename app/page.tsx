@@ -69,6 +69,11 @@ const hesaplamalar = [
     title: "Enflasyon Hesaplama",
     description: "Aylık enflasyon oranlarından kümülatif enflasyonu hesapla",
   },
+  {
+  href: "/yas-hesaplama",
+  title: "Yaş Hesaplama",
+  description: "Doğum tarihinizi girerek kaç yaşında olduğunuzu öğrenin",
+},
 ]
 
 export default function Home() {
