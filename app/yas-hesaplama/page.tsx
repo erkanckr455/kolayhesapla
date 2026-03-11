@@ -65,6 +65,24 @@ export default function YasHesaplama() {
             Yaşınız: {sonuc}
           </div>
         )}
+        <div className="mt-10 text-gray-700 leading-7">
+
+<h2 className="text-xl font-semibold mb-3">
+Yaş Hesaplama Nasıl Yapılır?
+</h2>
+
+<p className="mb-4">
+Yaş hesaplama işlemi doğum tarihi ile bugünün tarihi arasındaki farkın
+yıl, ay ve gün olarak hesaplanmasıyla yapılır. Doğum tarihinizi girerek
+kaç yaşında olduğunuzu kolayca öğrenebilirsiniz.
+</p>
+
+<p className="mb-4">
+Yaş hesaplama aracı özellikle resmi işlemler, eğitim başvuruları ve
+günlük kullanım için sıkça kullanılan pratik bir araçtır.
+</p>
+
+</div>
 
       </div>
 
