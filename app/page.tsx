@@ -1,153 +1,103 @@
+const hesaplamalar = [
+  {
+    href: "/kredi-hesaplama",
+    title: "Kredi Hesaplama",
+    description: "Aylık kredi taksitini öğren",
+  },
+  {
+    href: "/kdv-hesaplama",
+    title: "KDV Hesaplama",
+    description: "KDV dahil fiyatı hesapla",
+  },
+  {
+    href: "/hisse-kar-zarar",
+    title: "Hisse Kar/Zarar",
+    description: "Hisse kazancını hesapla",
+  },
+  {
+    href: "/kira-artis-hesaplama",
+    title: "Kira Artış Hesaplama",
+    description: "Yeni kira tutarını hesapla",
+  },
+  {
+    href: "/faiz-hesaplama",
+    title: "Faiz Hesaplama",
+    description: "Faiz getirini öğren",
+  },
+  {
+    href: "/yuzde-hesaplama",
+    title: "Yüzde Hesaplama",
+    description: "Yüzde artış ve indirim hesapla",
+  },
+  {
+    href: "/altin-hesaplama",
+    title: "Altın Hesaplama",
+    description: "Gram altının toplam değerini hesapla",
+  },
+  {
+    href: "/dolar-hesaplama",
+    title: "Dolar Hesaplama",
+    description: "Doların TL karşılığını hesapla",
+  },
+  {
+    href: "/maas-hesaplama",
+    title: "Net Maaş Hesaplama",
+    description: "Brüt maaşa göre net maaşı hesapla",
+  },
+  {
+    href: "/tapu-harci-hesaplama",
+    title: "Tapu Harcı Hesaplama",
+    description: "Ev satış fiyatına göre tapu harcını hesapla",
+  },
+  {
+    href: "/arac-km-maliyeti",
+    title: "Araç KM Maliyeti",
+    description: "Aracınızın kilometre başına yakıt maliyetini hesaplayın",
+  },
+  {
+    href: "/kar-zarar-hesaplama",
+    title: "Kar / Zarar Hesaplama",
+    description: "Maliyet ve satış fiyatına göre kar hesapla",
+  },
+  {
+    href: "/mevduat-faiz-hesaplama",
+    title: "Mevduat Faiz Getirisi",
+    description: "Anapara ve faiz oranına göre net getiriyi hesapla",
+  },
+  {
+    href: "/enflasyon-hesaplama",
+    title: "Enflasyon Hesaplama",
+    description: "Aylık enflasyon oranlarından kümülatif enflasyonu hesapla",
+  },
+]
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-gray-100">
-
-      {/* HERO */}
       <section className="text-center py-20 bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
-
-        <h1 className="text-5xl font-bold mb-6">
-          KolayHesapla
-        </h1>
+        <h1 className="text-5xl font-bold mb-6">KolayHesapla</h1>
 
         <p className="text-xl opacity-90">
           Kredi, KDV, altın ve finans hesaplama araçları
         </p>
-
       </section>
-
-
-      {/* HESAPLAMA KARTLARI */}
 
       <section className="max-w-6xl mx-auto p-10">
-
-        <h2 className="text-2xl font-semibold mb-8">
-          Hesaplama Araçları
-        </h2>
+        <h2 className="text-2xl font-semibold mb-8">Hesaplama Araçları</h2>
 
         <div className="grid md:grid-cols-3 gap-6">
-
-          <a href="/kredi-hesaplama" className="bg-white p-6 rounded-xl shadow hover:shadow-xl transition">
-            <h3 className="text-xl font-semibold mb-2">
-              Kredi Hesaplama
-            </h3>
-            <p className="text-gray-500">
-              Aylık kredi taksitini öğren
-            </p>
-          </a>
-
-          <a href="/kdv-hesaplama" className="bg-white p-6 rounded-xl shadow hover:shadow-xl transition">
-            <h3 className="text-xl font-semibold mb-2">
-              KDV Hesaplama
-            </h3>
-            <p className="text-gray-500">
-              KDV dahil fiyatı hesapla
-            </p>
-          </a>
-
-          <a href="/hisse-kar-zarar" className="bg-white p-6 rounded-xl shadow hover:shadow-xl transition">
-            <h3 className="text-xl font-semibold mb-2">
-              Hisse Kar/Zarar
-            </h3>
-            <p className="text-gray-500">
-              Hisse kazancını hesapla
-            </p>
-          </a>
-
-          <a href="/kira-artis-hesaplama" className="bg-white p-6 rounded-xl shadow hover:shadow-xl transition">
-            <h3 className="text-xl font-semibold mb-2">
-              Kira Artış Hesaplama
-            </h3>
-            <p className="text-gray-500">
-              Yeni kira tutarını hesapla
-            </p>
-          </a>
-
-          <a href="/faiz-hesaplama" className="bg-white p-6 rounded-xl shadow hover:shadow-xl transition">
-            <h3 className="text-xl font-semibold mb-2">
-              Faiz Hesaplama
-            </h3>
-            <p className="text-gray-500">
-              Faiz getirini öğren
-            </p>
-          </a>
-
-          <a href="/yuzde-hesaplama" className="bg-white p-6 rounded-xl shadow hover:shadow-xl transition">
-            <h3 className="text-xl font-semibold mb-2">
-              Yüzde Hesaplama
-            </h3>
-            <p className="text-gray-500">
-              Yüzde artış ve indirim hesapla
-            </p>
-          </a>
-<a href="/altin-hesaplama" className="bg-white p-6 rounded-xl shadow hover:shadow-xl transition">
-  <h3 className="text-xl font-semibold mb-2">
-    Altın Hesaplama
-  </h3>
-  <p className="text-gray-500">
-    Gram altının toplam değerini hesapla
-  </p>
-</a>
-<a href="/dolar-hesaplama" className="bg-white p-6 rounded-xl shadow hover:shadow-xl transition">
-  <h3 className="text-xl font-semibold mb-2">
-    Dolar Hesaplama
-  </h3>
-  <p className="text-gray-500">
-    Doların TL karşılığını hesapla
-  </p>
-</a>
-<a href="/maas-hesaplama" className="bg-white p-6 rounded-xl shadow hover:shadow-xl transition">
-  <h3 className="text-xl font-semibold mb-2">
-    Net Maaş Hesaplama
-  </h3>
-  <p className="text-gray-500">
-    Brüt maaşa göre net maaşı hesapla
-  </p>
-</a>
-<a href="/tapu-harci-hesaplama" className="bg-white p-6 rounded-xl shadow hover:shadow-xl transition">
-  <h3 className="text-xl font-semibold mb-2">
-    Tapu Harcı Hesaplama
-  </h3>
-  <p className="text-gray-500">
-    Ev satış fiyatına göre tapu harcını hesapla
-  </p>
-</a>
-<a href="/arac-km-maliyeti" className="bg-white p-6 rounded-xl shadow hover:shadow-xl transition">
-  <h3 className="text-xl font-semibold mb-2">
-    Araç KM Maliyeti
-  </h3>
-  <p className="text-gray-500">
-    Aracınızın kilometre başına yakıt maliyetini hesaplayın
-  </p>
-</a>
-<a href="/kar-zarar-hesaplama" className="bg-white p-6 rounded-xl shadow hover:shadow-xl transition">
-  <h3 className="text-xl font-semibold mb-2">
-    Kar / Zarar Hesaplama
-  </h3>
-  <p className="text-gray-500">
-    Maliyet ve satış fiyatına göre kar hesapla
-  </p>
-</a>
-<a href="/mevduat-faiz-hesaplama" className="bg-white p-6 rounded-xl shadow hover:shadow-xl transition">
-  <h3 className="text-xl font-semibold mb-2">
-    Mevduat Faiz Getirisi
-  </h3>
-  <p className="text-gray-500">
-    Anapara ve faiz oranına göre net getiriyi hesapla
-  </p>
-</a>
-<a href="/enflasyon-hesaplama" className="bg-white p-6 rounded-xl shadow hover:shadow-xl transition">
-  <h3 className="text-xl font-semibold mb-2">
-    Enflasyon Hesaplama
-  </h3>
-  <p className="text-gray-500">
-    Aylık enflasyon oranlarından kümülatif enflasyonu hesapla
-  </p>
-</a>
-
+          {hesaplamalar.map((item) => (
+            <a
+              key={item.href}
+              href={item.href}
+              className="bg-white p-6 rounded-xl shadow hover:shadow-xl transition"
+            >
+              <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
+              <p className="text-gray-500">{item.description}</p>
+            </a>
+          ))}
         </div>
-
       </section>
-
     </main>
   )
 }
