@@ -1,62 +1,23 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-export const metadata: Metadata = {
-  title: "KolayHesapla - Kredi, KDV, Yüzde ve Finans Hesaplama Araçları",
+export const metadata = {
+  title: "HesapUzmanı - Finans Hesaplama Araçları",
   description:
-    "Kredi hesaplama, KDV hesaplama, yüzde hesaplama, hisse kar zarar ve temettü hesaplama araçları. Tüm finans hesaplamaları tek yerde.",
-  verification: {
-    google: "6tvuyR54pkLAPZT37RNbxw1XGcco44eKmlgXM9PZbxQ",
-  },
-};
+    "Kredi, faiz, KDV, enflasyon, maaş ve günlük hesaplama araçlarını ücretsiz kullanın.",
+}
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: {
+  children: React.ReactNode
+}) {
   return (
     <html lang="tr">
-      <body className={`${geistSans.variable} ${geistMono.variable} bg-gray-100`}>
-        <nav className="bg-white shadow-md">
-          <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between">
-            <a href="/" className="text-xl font-bold">
-              KolayHesapla
-            </a>
-
-            <div className="space-x-6">
-              <a href="/kredi-hesaplama" className="hover:text-blue-600">
-                Kredi
-              </a>
-
-              <a href="/kdv-hesaplama" className="hover:text-blue-600">
-                KDV
-              </a>
-
-              <a href="/hisse-kar-zarar" className="hover:text-blue-600">
-                Hisse
-              </a>
-
-              <a href="/faiz-hesaplama" className="hover:text-blue-600">
-                Faiz
-              </a>
-            </div>
-          </div>
-        </nav>
-
-        {children}
-      </body>
+      <head>
+        <meta
+          name="google-site-verification"
+          content="61I1FluLfb6uFFAPvARQrRSzesR_E69qdP0GjJIc2jc"
+        />
+      </head>
+      <body>{children}</body>
     </html>
-  );
+  )
 }
