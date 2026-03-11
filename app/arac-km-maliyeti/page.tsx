@@ -30,7 +30,7 @@ export default function AracKmMaliyeti() {
 
     <CalculatorLayout
       title="Araç Yakıt KM Maliyeti Hesaplama"
-      description="Aldığınız yakıt tutarına ve gittiğiniz mesafeye göre km başına yakıt maliyetini hesaplayın."
+      description="Aldığınız yakıt tutarına ve gittiğiniz mesafeye göre km başına yakıt maliyetini ve 100 km yakıt maliyetini hesaplayın."
     >
 
       <div className="space-y-5">
@@ -87,6 +87,77 @@ export default function AracKmMaliyeti() {
 
         </div>
       )}
+
+      <div className="mt-12 space-y-8 text-gray-700 leading-7">
+
+        <section>
+          <h2 className="text-2xl font-bold text-gray-900 mb-3">
+            KM Başına Yakıt Maliyeti Nedir?
+          </h2>
+
+          <p>
+            KM başına yakıt maliyeti, aracınızın her kilometrede ne kadar yakıt harcadığını
+            TL cinsinden gösteren bir hesaplama yöntemidir. Bu hesaplama özellikle
+            araç sahipleri için oldukça faydalıdır çünkü aracın gerçek yakıt
+            maliyetini anlamayı sağlar.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-bold text-gray-900 mb-3">
+            KM Yakıt Maliyeti Nasıl Hesaplanır?
+          </h2>
+
+          <p>
+            KM başına yakıt maliyetini hesaplamak için aldığınız yakıt tutarını
+            gittiğiniz mesafeye bölmeniz yeterlidir.
+          </p>
+
+          <p className="font-semibold text-gray-900 mt-2">
+            KM maliyeti = Yakıt tutarı / Gidilen kilometre
+          </p>
+
+          <p className="mt-2">
+            Örneğin 670 TL yakıt alıp 250 km gittiyseniz:
+          </p>
+
+          <p className="font-semibold text-gray-900">
+            670 / 250 = 2.68 TL
+          </p>
+
+          <p>
+            Bu durumda aracınız 1 kilometrede yaklaşık 2.68 TL yakıt tüketmiştir.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-bold text-gray-900 mb-3">
+            100 KM Yakıt Maliyeti Nasıl Hesaplanır?
+          </h2>
+
+          <p>
+            100 km yakıt maliyetini bulmak için km başına maliyeti 100 ile
+            çarpmanız yeterlidir.
+          </p>
+
+          <p className="font-semibold text-gray-900">
+            100 KM maliyeti = KM maliyeti × 100
+          </p>
+
+          <p>
+            Örneğin km başına maliyet 2.68 TL ise:
+          </p>
+
+          <p className="font-semibold text-gray-900">
+            2.68 × 100 = 268 TL
+          </p>
+
+          <p>
+            Bu durumda aracınız 100 kilometrede yaklaşık 268 TL yakmaktadır.
+          </p>
+        </section>
+
+      </div>
 
     </CalculatorLayout>
 
