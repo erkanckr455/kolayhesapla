@@ -84,6 +84,41 @@ export default function Page() {
           </div>
         </div>
       )}
+
+      <div className="mt-10 text-gray-700 leading-7">
+
+        <h2 className="text-xl font-semibold mb-3">
+          Faiz Hesaplama Nasıl Yapılır?
+        </h2>
+
+        <p className="mb-4">
+          Faiz hesaplama işlemi anapara, faiz oranı ve vade süresi
+          kullanılarak yapılır. Basit faiz hesaplamasında anapara üzerine
+          belirlenen faiz oranı uygulanır ve gün sayısına göre faiz getirisi
+          hesaplanır.
+        </p>
+
+        <h2 className="text-xl font-semibold mb-3">
+          Örnek Faiz Hesaplama
+        </h2>
+
+        <p className="mb-4">
+          Örneğin 100.000 TL anapara, %45 faiz oranı ve 30 gün vade ile
+          yapılan hesaplamada elde edilecek faiz getirisi hesaplama
+          aracı tarafından otomatik olarak gösterilir.
+        </p>
+
+        <h2 className="text-xl font-semibold mb-3">
+          İlgili Hesaplama Araçları
+        </h2>
+
+        <ul className="list-disc ml-5">
+          <li><a href="/kredi-hesaplama" className="text-blue-600">Kredi Hesaplama</a></li>
+          <li><a href="/yuzde-hesaplama" className="text-blue-600">Yüzde Hesaplama</a></li>
+          <li><a href="/mevduat-faiz-hesaplama" className="text-blue-600">Mevduat Faiz Getirisi</a></li>
+        </ul>
+
+      </div>
     </CalculatorLayout>
   )
 }
