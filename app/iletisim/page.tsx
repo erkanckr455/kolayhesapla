@@ -27,7 +27,7 @@ export default function Page() {
           </p>
 
           <h2 className="text-xl font-semibold text-gray-900 mt-3">
-            iletisim@hesapuzmani.site
+            ligundem@gmail.com
           </h2>
 
         </div>
