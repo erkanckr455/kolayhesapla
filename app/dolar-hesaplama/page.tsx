@@ -22,7 +22,7 @@ export default function Page() {
   return (
     <CalculatorLayout
       title="Dolar Hesaplama"
-      description="Dolar miktarını güncel kur ile TL karşılığına çevir."
+      description="Dolar miktarını güncel dolar kuru ile TL karşılığına kolayca çevirin. USD - TL dönüşümünü saniyeler içinde hesaplayın."
     >
       <div className="space-y-5">
 
@@ -65,6 +65,136 @@ export default function Page() {
           <p className="text-gray-800"><strong>TL Karşılığı:</strong> {sonuc}</p>
         </div>
       )}
+
+      <div className="mt-12 space-y-8 text-gray-700 leading-7">
+
+        <section>
+          <h2 className="text-2xl font-bold text-gray-900 mb-3">
+            Dolar Hesaplama Nedir?
+          </h2>
+          <p className="mb-4">
+            Dolar hesaplama, sahip olduğunuz dolar miktarının güncel dolar kuru
+            ile Türk Lirası karşılığını bulmanızı sağlayan bir işlemdir.
+            Özellikle döviz yatırımı yapan kişiler, yurtdışı ödeme yapanlar
+            veya döviz birikimi olan kişiler için doların TL karşılığını
+            hızlı şekilde hesaplamak önemlidir.
+          </p>
+          <p>
+            Bu sayfadaki dolar hesaplama aracı ile dolar miktarını ve dolar
+            kurunu girerek TL karşılığını saniyeler içinde öğrenebilirsiniz.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-bold text-gray-900 mb-3">
+            Dolar TL Hesaplama Nasıl Yapılır?
+          </h2>
+          <p className="mb-4">
+            Doların TL karşılığı hesaplanırken dolar miktarı ile dolar kuru
+            çarpılır.
+          </p>
+
+          <p className="font-semibold text-gray-900 mb-4">
+            TL Değeri = Dolar Miktarı × Dolar Kuru
+          </p>
+
+          <p>
+            Örneğin 100 dolarınız varsa ve dolar kuru 32,50 TL ise
+            toplam değer 100 × 32,50 = 3.250 TL olur.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-bold text-gray-900 mb-3">
+            Örnek Dolar Hesaplama
+          </h2>
+
+          <div className="space-y-4">
+            <p><strong>100 dolar:</strong> Kur 32 TL ise toplam değer 3.200 TL olur.</p>
+            <p><strong>500 dolar:</strong> Kur 32,50 TL ise toplam değer 16.250 TL olur.</p>
+            <p><strong>1000 dolar:</strong> Kur 33 TL ise toplam değer 33.000 TL olur.</p>
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-bold text-gray-900 mb-3">
+            Dolar Hesaplama Nerelerde Kullanılır?
+          </h2>
+
+          <ul className="list-disc ml-5 space-y-2">
+            <li>Döviz yatırımının TL karşılığını öğrenmek</li>
+            <li>Yurtdışı alışverişlerinde ödeme tutarını hesaplamak</li>
+            <li>Döviz bozdururken toplam TL değerini görmek</li>
+            <li>Döviz portföyünün değerini hesaplamak</li>
+            <li>Farklı kur senaryolarını karşılaştırmak</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-bold text-gray-900 mb-3">
+            Sık Sorulan Sorular
+          </h2>
+
+          <div className="space-y-5">
+
+            <div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-1">
+                Dolar TL hesaplama nasıl yapılır?
+              </h3>
+              <p>
+                Dolar miktarı ile dolar kuru çarpılarak TL karşılığı bulunur.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-1">
+                Dolar kuru neden sürekli değişir?
+              </h3>
+              <p>
+                Döviz kurları küresel piyasa hareketleri, ekonomik veriler,
+                faiz oranları ve arz-talep dengesi gibi birçok faktöre bağlı
+                olarak sürekli değişebilir.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-1">
+                Bu araç başka dövizler için kullanılabilir mi?
+              </h3>
+              <p>
+                Aynı mantıkla euro veya diğer dövizlerin TL karşılığı da
+                hesaplanabilir. Sadece ilgili döviz kuru girilmelidir.
+              </p>
+            </div>
+
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-bold text-gray-900 mb-3">
+            İlgili Hesaplama Araçları
+          </h2>
+
+          <ul className="list-disc ml-5 space-y-1">
+            <li>
+              <a href="/altin-hesaplama" className="text-blue-600 hover:underline">
+                Altın Hesaplama
+              </a>
+            </li>
+            <li>
+              <a href="/faiz-hesaplama" className="text-blue-600 hover:underline">
+                Faiz Hesaplama
+              </a>
+            </li>
+            <li>
+              <a href="/enflasyon-hesaplama" className="text-blue-600 hover:underline">
+                Enflasyon Hesaplama
+              </a>
+            </li>
+          </ul>
+        </section>
+
+      </div>
     </CalculatorLayout>
   )
 }
