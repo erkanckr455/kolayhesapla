@@ -11,6 +11,7 @@ const hesaplamalar = [
   { href: "/maas-hesaplama", title: "Net Maaş", desc: "Brüt maaştan net maaşı hesapla" },
   { href: "/enflasyon-hesaplama", title: "Enflasyon Hesaplama", desc: "Aylık enflasyon hesapla" },
   { href: "/yas-hesaplama", title: "Yaş Hesaplama", desc: "Doğum tarihinize göre yaş hesapla" },
+  { href: "/arac-km-maliyeti", title: "Araç KM Maliyeti", desc: "1 km ve 100 km yakıt maliyetini hesapla" },
 ]
 
 export default function Home() {
