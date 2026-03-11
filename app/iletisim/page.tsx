@@ -9,20 +9,27 @@ export default function Page() {
       <div className="mt-6 text-gray-700 leading-7 space-y-6">
 
         <p>
-          HesapUzmani sitesi ile ilgili soru, öneri veya geri bildirimlerinizi
-          bizimle paylaşabilirsiniz.
+          HesapUzmani sitesi ile iletişime geçmek için bu sayfayı kullanabilirsiniz.
+        </p>
+
+        <p>
+          HesapUzmani sitesi ile ilgili soru, öneri veya geri bildirimlerinizi bizimle paylaşabilirsiniz.
         </p>
 
         <div className="bg-gray-50 border rounded-xl p-6">
-          <h2 className="text-xl font-semibold mb-3">ligundem@gmail.com</h2>
+
+          <h2 className="text-xl font-semibold text-gray-900 mb-3">
+            ligundem@gmail.com
+          </h2>
 
           <p>
             Sorularınız için bize aşağıdaki e-posta adresinden ulaşabilirsiniz:
           </p>
 
-          <p className="mt-3 font-semibold text-blue-600">
+          <h2 className="text-xl font-semibold text-gray-900 mt-3">
             iletisim@hesapuzmani.site
-          </p>
+          </h2>
+
         </div>
 
         <h2 className="text-xl font-semibold">Hakkımızda</h2>
