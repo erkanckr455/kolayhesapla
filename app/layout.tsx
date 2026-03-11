@@ -16,6 +16,9 @@ export const metadata: Metadata = {
   title: "KolayHesapla - Kredi, KDV, Yüzde ve Finans Hesaplama Araçları",
   description:
     "Kredi hesaplama, KDV hesaplama, yüzde hesaplama, hisse kar zarar ve temettü hesaplama araçları. Tüm finans hesaplamaları tek yerde.",
+  verification: {
+    google: "6tvuyR54pkLAPZT37RNbxw1XGcco44eKmlgXM9PZbxQ",
+  },
 };
 
 export default function RootLayout({
@@ -44,9 +47,10 @@ export default function RootLayout({
               <a href="/hisse-kar-zarar" className="hover:text-blue-600">
                 Hisse
               </a>
-<a href="/faiz-hesaplama" className="hover:text-blue-600">
-  Faiz
-</a>
+
+              <a href="/faiz-hesaplama" className="hover:text-blue-600">
+                Faiz
+              </a>
             </div>
           </div>
         </nav>
