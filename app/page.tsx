@@ -1,226 +1,88 @@
 import Link from "next/link"
 
 const hesaplamalar = [
-  {
-    href: "/kredi-hesaplama",
-    title: "Kredi Hesaplama",
-    description: "Aylık kredi taksitini öğren",
-    icon: "💳",
-  },
-  {
-    href: "/kdv-hesaplama",
-    title: "KDV Hesaplama",
-    description: "KDV dahil fiyatı hesapla",
-    icon: "🧾",
-  },
-  {
-    href: "/hisse-kar-zarar",
-    title: "Hisse Kar/Zarar",
-    description: "Hisse kazancını hesapla",
-    icon: "📈",
-  },
-  {
-    href: "/kira-artis-hesaplama",
-    title: "Kira Artış Hesaplama",
-    description: "Yeni kira tutarını hesapla",
-    icon: "🏠",
-  },
-  {
-    href: "/faiz-hesaplama",
-    title: "Faiz Hesaplama",
-    description: "Faiz getirini öğren",
-    icon: "💰",
-  },
-  {
-    href: "/yuzde-hesaplama",
-    title: "Yüzde Hesaplama",
-    description: "Yüzde artış ve indirim hesapla",
-    icon: "📊",
-  },
-  {
-    href: "/altin-hesaplama",
-    title: "Altın Hesaplama",
-    description: "Gram altının toplam değerini hesapla",
-    icon: "🪙",
-  },
-  {
-    href: "/dolar-hesaplama",
-    title: "Dolar Hesaplama",
-    description: "Doların TL karşılığını hesapla",
-    icon: "💵",
-  },
-  {
-    href: "/maas-hesaplama",
-    title: "Net Maaş Hesaplama",
-    description: "Brüt maaşa göre net maaşı hesapla",
-    icon: "👔",
-  },
-  {
-    href: "/tapu-harci-hesaplama",
-    title: "Tapu Harcı Hesaplama",
-    description: "Ev satış fiyatına göre tapu harcını hesapla",
-    icon: "🏘️",
-  },
-  {
-    href: "/arac-km-maliyeti",
-    title: "Araç KM Maliyeti",
-    description: "Aracınızın kilometre başına yakıt maliyetini hesaplayın",
-    icon: "🚗",
-  },
-  {
-    href: "/kar-zarar-hesaplama",
-    title: "Kar / Zarar Hesaplama",
-    description: "Maliyet ve satış fiyatına göre kar hesapla",
-    icon: "📉",
-  },
-  {
-    href: "/mevduat-faiz-hesaplama",
-    title: "Mevduat Faiz Getirisi",
-    description: "Anapara ve faiz oranına göre net getiriyi hesapla",
-    icon: "🏦",
-  },
-  {
-    href: "/enflasyon-hesaplama",
-    title: "Enflasyon Hesaplama",
-    description: "Aylık enflasyon oranlarından kümülatif enflasyonu hesapla",
-    icon: "📌",
-  },
-  {
-    href: "/yas-hesaplama",
-    title: "Yaş Hesaplama",
-    description: "Doğum tarihinizi girerek kaç yaşında olduğunuzu öğrenin",
-    icon: "🎂",
-  },
-  {
-    href: "/iki-tarih-arasi-gun-hesaplama",
-    title: "İki Tarih Arası Gün Hesaplama",
-    description: "İki tarih arasındaki gün sayısını hesaplayın",
-    icon: "📅",
-  },
+  { href: "/kredi-hesaplama", title: "Kredi Hesaplama", desc: "Aylık kredi taksitini öğren" },
+  { href: "/kdv-hesaplama", title: "KDV Hesaplama", desc: "KDV dahil fiyatı hesapla" },
+  { href: "/hisse-kar-zarar", title: "Hisse Kar/Zarar", desc: "Hisse kazancını hesapla" },
+  { href: "/faiz-hesaplama", title: "Faiz Hesaplama", desc: "Faiz getirini öğren" },
+  { href: "/yuzde-hesaplama", title: "Yüzde Hesaplama", desc: "Yüzde artış ve indirim hesapla" },
+  { href: "/altin-hesaplama", title: "Altın Hesaplama", desc: "Gram altının değerini hesapla" },
+  { href: "/dolar-hesaplama", title: "Dolar Hesaplama", desc: "Doların TL karşılığını hesapla" },
+  { href: "/maas-hesaplama", title: "Net Maaş", desc: "Brüt maaştan net maaşı hesapla" },
+  { href: "/enflasyon-hesaplama", title: "Enflasyon Hesaplama", desc: "Aylık enflasyon hesapla" },
+  { href: "/yas-hesaplama", title: "Yaş Hesaplama", desc: "Doğum tarihinize göre yaş hesapla" },
 ]
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-gray-100">
-      <section className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
-        <div className="max-w-6xl mx-auto px-6 py-20 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">KolayHesapla</h1>
 
-          <p className="text-lg md:text-2xl opacity-90 max-w-3xl mx-auto leading-relaxed">
-            Kredi, faiz, KDV, enflasyon, maaş ve günlük hesaplama araçlarını
-            tek yerde ücretsiz kullanın.
+      <section className="bg-blue-600 text-white py-16">
+        <div className="max-w-5xl mx-auto px-6 text-center">
+
+          <h1 className="text-4xl font-bold mb-4">
+            HesapUzmani
+          </h1>
+
+          <p className="text-lg text-blue-100">
+            Kredi, faiz, KDV, enflasyon ve günlük hesaplama araçları.
           </p>
 
-          <div className="flex flex-wrap justify-center gap-3 mt-8">
-            <Link
-              href="/kredi-hesaplama"
-              className="bg-white/15 px-4 py-2 rounded-full hover:bg-white/25 transition"
-            >
-              Kredi
-            </Link>
-
-            <Link
-              href="/faiz-hesaplama"
-              className="bg-white/15 px-4 py-2 rounded-full hover:bg-white/25 transition"
-            >
-              Faiz
-            </Link>
-
-            <Link
-              href="/enflasyon-hesaplama"
-              className="bg-white/15 px-4 py-2 rounded-full hover:bg-white/25 transition"
-            >
-              Enflasyon
-            </Link>
-
-            <Link
-              href="/maas-hesaplama"
-              className="bg-white/15 px-4 py-2 rounded-full hover:bg-white/25 transition"
-            >
-              Maaş
-            </Link>
-
-            <Link
-              href="/yas-hesaplama"
-              className="bg-white/15 px-4 py-2 rounded-full hover:bg-white/25 transition"
-            >
-              Günlük Hesaplama
-            </Link>
-          </div>
         </div>
       </section>
 
       <section className="max-w-6xl mx-auto px-6 py-12">
-        <h2 className="text-3xl font-bold text-gray-900 mb-3">
+
+        <h2 className="text-2xl font-bold mb-8">
           Hesaplama Araçları
         </h2>
 
-        <p className="text-gray-600 mb-8 max-w-2xl">
-          Finans, yatırım ve günlük yaşam için ihtiyaç duyabileceğiniz ücretsiz
-          hesaplama araçlarını kullanabilirsiniz.
-        </p>
+        <div className="grid md:grid-cols-3 gap-6">
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {hesaplamalar.map((item) => (
+          {hesaplamalar.map((h) => (
             <Link
-              key={item.href}
-              href={item.href}
-              className="group bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-200 p-6 transition duration-300 hover:-translate-y-1"
+              key={h.href}
+              href={h.href}
+              className="bg-white rounded-xl shadow p-6 hover:shadow-lg transition"
             >
-              <div className="text-3xl mb-4">{item.icon}</div>
 
-              <h3 className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-blue-600 transition">
-                {item.title}
+              <h3 className="text-xl font-semibold mb-2">
+                {h.title}
               </h3>
 
-              <p className="text-gray-600 text-sm leading-6">
-                {item.description}
+              <p className="text-gray-600 text-sm">
+                {h.desc}
               </p>
+
             </Link>
           ))}
+
         </div>
+
       </section>
 
-      <section className="max-w-4xl mx-auto px-6 pb-12">
-        <div className="bg-white rounded-2xl shadow-sm border border-gray-200 p-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">
+      <section className="max-w-4xl mx-auto px-6 pb-16">
+
+        <div className="bg-white rounded-xl shadow p-8">
+
+          <h2 className="text-2xl font-bold mb-4">
             Online Hesaplama Araçları
           </h2>
 
-          <p className="text-gray-700 leading-7 mb-4">
-            HesapUzmanı, günlük hayatta ihtiyaç duyabileceğiniz finans ve
-            hesaplama araçlarını tek bir yerde sunar. Kredi hesaplama, faiz
-            hesaplama, KDV hesaplama ve yüzde hesaplama gibi işlemleri hızlı ve
-            ücretsiz şekilde yapabilirsiniz.
+          <p className="text-gray-700 mb-4">
+            HesapUzmani sitesi kredi hesaplama, faiz hesaplama, KDV hesaplama ve
+            birçok finansal hesaplama aracını ücretsiz olarak sunar.
           </p>
 
-          <p className="text-gray-700 leading-7 mb-4">
-            Sitemizde yer alan araçlar sayesinde kredi taksitlerini
-            hesaplayabilir, enflasyon oranlarına göre değer değişimlerini
-            görebilir ve kira artış hesaplamalarını kolayca yapabilirsiniz.
+          <p className="text-gray-700">
+            Hesaplama araçlarını kullanarak finansal planlamanızı kolayca
+            yapabilirsiniz.
           </p>
 
-          <p className="text-gray-700 leading-7">
-            HesapUzmanı sürekli güncellenen hesaplama araçları ile finansal
-            planlamanızı daha kolay yapmanıza yardımcı olur.
-          </p>
         </div>
+
       </section>
 
-      <footer className="bg-white border-t border-gray-200">
-        <div className="max-w-6xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-gray-600 text-sm">© 2026 KolayHesapla</p>
-
-          <div className="flex gap-4 text-sm">
-            <Link
-              href="/gizlilik-politikasi"
-              className="text-gray-600 hover:text-blue-600"
-            >
-              Gizlilik Politikası
-            </Link>
-          </div>
-        </div>
-      </footer>
     </main>
   )
 }
