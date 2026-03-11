@@ -135,6 +135,14 @@ export default function Home() {
     Anapara ve faiz oranına göre net getiriyi hesapla
   </p>
 </a>
+<a href="/enflasyon-hesaplama" className="bg-white p-6 rounded-xl shadow hover:shadow-xl transition">
+  <h3 className="text-xl font-semibold mb-2">
+    Enflasyon Hesaplama
+  </h3>
+  <p className="text-gray-500">
+    Aylık enflasyon oranlarından kümülatif enflasyonu hesapla
+  </p>
+</a>
 
         </div>
 
