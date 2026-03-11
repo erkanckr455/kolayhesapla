@@ -74,6 +74,11 @@ const hesaplamalar = [
   title: "Yaş Hesaplama",
   description: "Doğum tarihinizi girerek kaç yaşında olduğunuzu öğrenin",
 },
+{
+  href: "/iki-tarih-arasi-gun-hesaplama",
+  title: "İki Tarih Arası Gün Hesaplama",
+  description: "İki tarih arasındaki gün sayısını hesaplayın",
+},
 ]
 
 export default function Home() {
