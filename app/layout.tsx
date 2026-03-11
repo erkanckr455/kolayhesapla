@@ -1,60 +1,26 @@
 import type { Metadata } from "next"
-import { Geist, Geist_Mono } from "next/font/google"
 import "./globals.css"
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-})
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-})
-
 export const metadata: Metadata = {
-  title: "HesapUzmanı - Finans Hesaplama Araçları",
-  description:
-    "Kredi, faiz, KDV, enflasyon, maaş ve günlük hesaplama araçlarını ücretsiz kullanın.",
-  verification: {
-    google: "61I1FluLfb6uFFAPvARQrRSzesR_E69qdP0GjJIc2jc",
-  },
+  title: "KolayHesapla",
+  description: "Kredi, faiz, KDV, enflasyon ve maaş hesaplama araçları"
 }
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode
-}>) {
+}) {
   return (
     <html lang="tr">
-      <body className={`${geistSans.variable} ${geistMono.variable} bg-gray-100`}>
-        <nav className="bg-white shadow-md">
-          <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="/" className="text-xl font-bold">
-              KolayHesapla
-            </a>
-
-            <div className="space-x-6">
-              <a href="/kredi-hesaplama" className="hover:text-blue-600">
-                Kredi
-              </a>
-
-              <a href="/kdv-hesaplama" className="hover:text-blue-600">
-                KDV
-              </a>
-
-              <a href="/hisse-kar-zarar" className="hover:text-blue-600">
-                Hisse
-              </a>
-
-              <a href="/faiz-hesaplama" className="hover:text-blue-600">
-                Faiz
-              </a>
-            </div>
-          </div>
-        </nav>
-
+      <head>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7494215615753370"
+          crossOrigin="anonymous"
+        ></script>
+      </head>
+      <body>
         {children}
       </body>
     </html>
