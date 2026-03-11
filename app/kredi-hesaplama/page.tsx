@@ -19,7 +19,7 @@ export default function Page() {
       return
     }
 
-    const odeme = kredi * faiz / (1 - Math.pow(1 + faiz, -vade))
+    const odeme = (kredi * faiz) / (1 - Math.pow(1 + faiz, -vade))
     const toplamOdeme = odeme * vade
     const toplamFaiz = toplamOdeme - kredi
 
@@ -93,31 +93,30 @@ export default function Page() {
                 <p><strong>Aylık Taksit:</strong> {sonuc}</p>
                 {toplam && <p><strong>Toplam Geri Ödeme:</strong> {toplam}</p>}
                 {faizToplami && <p><strong>Toplam Faiz:</strong> {faizToplami}</p>}
-                <div className="mt-10 text-gray-700 leading-7">
-
-<h2 className="text-xl font-semibold mb-3">
-Kredi Hesaplama Nasıl Yapılır?
-</h2>
-
-<p className="mb-4">
-Kredi hesaplama işlemi kredi tutarı, faiz oranı ve vade süresi
-kullanılarak yapılır. Bankalar kredi taksitlerini aylık faiz oranına
-göre hesaplar.
-</p>
-
-<h2 className="text-xl font-semibold mb-3">
-Örnek Kredi Hesaplama
-</h2>
-
-<p className="mb-4">
-100.000 TL kredi, %3 faiz oranı ve 12 ay vade ile çekildiğinde
-aylık ödeme tutarı hesaplama aracında otomatik olarak gösterilir.
-</p>
-
-</div>
               </div>
             </div>
           )}
+
+          <div className="mt-10 text-gray-700 leading-7">
+            <h2 className="text-xl font-semibold mb-3">
+              Kredi Hesaplama Nasıl Yapılır?
+            </h2>
+
+            <p className="mb-4">
+              Kredi hesaplama işlemi kredi tutarı, faiz oranı ve vade süresi
+              kullanılarak yapılır. Bankalar kredi taksitlerini aylık faiz oranına
+              göre hesaplar.
+            </p>
+
+            <h2 className="text-xl font-semibold mb-3">
+              Örnek Kredi Hesaplama
+            </h2>
+
+            <p className="mb-4">
+              100.000 TL kredi, %3 faiz oranı ve 12 ay vade ile çekildiğinde
+              aylık ödeme tutarı hesaplama aracında otomatik olarak gösterilir.
+            </p>
+          </div>
         </div>
       </div>
     </main>
