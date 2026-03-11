@@ -227,27 +227,27 @@ export default function EnflasyonHesaplama() {
             {sonuc}
           </div>
         )}
+
+        <div className="mt-10 text-gray-700 leading-7">
+          <h2 className="text-xl font-semibold mb-3">
+            Enflasyon Hesaplama Nasıl Yapılır?
+          </h2>
+
+          <p className="mb-4">
+            Enflasyon hesaplama, açıklanan aylık enflasyon oranlarının bileşik
+            olarak birbirine eklenmesiyle yapılır. Örneğin bir ay %2 ve sonraki
+            ay %3,5 enflasyon gerçekleştiğinde toplam enflasyon %5,5 olmaz.
+            Çünkü her ay önceki ayın üzerine eklenir ve kümülatif enflasyon
+            oluşur.
+          </p>
+
+          <p className="mb-4">
+            Türkiye’de enflasyon verileri TÜİK tarafından her ay açıklanır. Bu
+            hesaplama aracı ile aylık enflasyon oranlarını girerek 1 aylık, 6
+            aylık veya yıllık toplam enflasyonu kolayca hesaplayabilirsiniz.
+          </p>
+        </div>
       </div>
     </CalculatorLayout>
   )
 }
-<div className="mt-10 text-gray-700 leading-7">
-
-<h2 className="text-xl font-semibold mb-3">
-Enflasyon Hesaplama Nasıl Yapılır?
-</h2>
-
-<p className="mb-4">
-Enflasyon hesaplama, açıklanan aylık enflasyon oranlarının bileşik olarak
-birbirine eklenmesiyle yapılır. Örneğin bir ay %2 ve sonraki ay %3,5
-enflasyon gerçekleştiğinde toplam enflasyon %5,5 olmaz. Çünkü her ay
-önceki ayın üzerine eklenir ve kümülatif enflasyon oluşur.
-</p>
-
-<p className="mb-4">
-Türkiye’de enflasyon verileri TÜİK tarafından her ay açıklanır. Bu
-hesaplama aracı ile aylık enflasyon oranlarını girerek 1 aylık, 6 aylık
-veya yıllık toplam enflasyonu kolayca hesaplayabilirsiniz.
-</p>
-
-</div>
