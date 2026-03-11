@@ -24,7 +24,7 @@ export default function RootLayout({
 
       </head>
 
-      <body>
+      <body className="bg-gray-100 flex flex-col min-h-screen">
 
         <header className="bg-white border-b">
           <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
@@ -43,9 +43,33 @@ export default function RootLayout({
           </div>
         </header>
 
-        <main className="min-h-screen bg-gray-100">
+        <main className="flex-grow">
           {children}
         </main>
+
+        <footer className="bg-white border-t mt-10">
+          <div className="max-w-6xl mx-auto px-4 py-6 text-center text-gray-600">
+
+            <div className="flex justify-center gap-6 mb-3">
+              <Link href="/iletisim" className="hover:text-blue-600">
+                İletişim
+              </Link>
+
+              <Link href="/gizlilik-politikasi" className="hover:text-blue-600">
+                Gizlilik Politikası
+              </Link>
+
+              <Link href="/kullanim-sartlari" className="hover:text-blue-600">
+                Kullanım Şartları
+              </Link>
+            </div>
+
+            <p className="text-sm">
+              © {new Date().getFullYear()} HesapUzmani.site - Tüm hakları saklıdır.
+            </p>
+
+          </div>
+        </footer>
 
       </body>
     </html>
