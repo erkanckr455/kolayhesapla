@@ -9,6 +9,7 @@ const hesaplamalar = [
   { href: "/faiz-hesaplama", title: "Faiz Hesaplama", desc: "Faiz getirini öğren" },
   { href: "/hisse-kar-zarar", title: "Hisse Kar/Zarar", desc: "Hisse kazancını hesapla" },
   { href: "/kdv-hesaplama", title: "KDV Hesaplama", desc: "KDV dahil fiyatı hesapla" },
+  { href: "/kira-artis-hesaplama", title: "Kira Artış Hesaplama", desc: "Kira artış oranına göre yeni kira tutarını hesapla" },
   { href: "/kredi-hesaplama", title: "Kredi Hesaplama", desc: "Aylık kredi taksitini öğren" },
   { href: "/maas-hesaplama", title: "Net Maaş", desc: "Brüt maaştan net maaşı hesapla" },
   { href: "/yas-hesaplama", title: "Yaş Hesaplama", desc: "Doğum tarihinize göre yaş hesapla" },
@@ -28,7 +29,7 @@ export default function Home() {
           </h1>
 
           <p className="text-lg text-blue-100">
-            Kredi, faiz, KDV, enflasyon ve günlük hesaplama araçları.
+            Kredi, faiz, KDV, kira artışı ve günlük hesaplama araçları.
           </p>
 
         </div>
@@ -73,8 +74,9 @@ export default function Home() {
           </h2>
 
           <p className="text-gray-700 mb-4">
-            HesapUzmani sitesi kredi hesaplama, faiz hesaplama, KDV hesaplama ve
-            birçok finansal hesaplama aracını ücretsiz olarak sunar.
+            HesapUzmani sitesi kredi hesaplama, faiz hesaplama, KDV hesaplama,
+            kira artış hesaplama ve birçok finansal hesaplama aracını ücretsiz
+            olarak sunar.
           </p>
 
           <p className="text-gray-700">
