@@ -118,8 +118,55 @@ Kar Marjı = (Satış Fiyatı - Maliyet) / Maliyet × 100
 
 </div>
 
+<div className="mt-12 space-y-6 text-gray-700 leading-7">
+
+<h2 className="text-2xl font-bold text-gray-900">
+Kar Marjı Hesaplama Örnekleri
+</h2>
+
+<p>
+100 TL maliyet ile 150 TL satış fiyatı → %50 kar marjı
+</p>
+
+<p>
+200 TL maliyet ile 260 TL satış fiyatı → %30 kar marjı
+</p>
+
+<p>
+500 TL maliyet ile 650 TL satış fiyatı → %30 kar marjı
+</p>
+
+<p>
+1000 TL maliyet ile 1300 TL satış fiyatı → %30 kar marjı
+</p>
+
+</div>
+
 </CalculatorLayout>
+
 
 )
 
-}
+}<div className="mt-12 space-y-6 text-gray-700 leading-7">
+
+<h2 className="text-2xl font-bold text-gray-900">
+Kar Marjı Hesaplama Örnekleri
+</h2>
+
+<p>
+100 TL maliyet ile 150 TL satış fiyatı → %50 kar marjı
+</p>
+
+<p>
+200 TL maliyet ile 260 TL satış fiyatı → %30 kar marjı
+</p>
+
+<p>
+500 TL maliyet ile 650 TL satış fiyatı → %30 kar marjı
+</p>
+
+<p>
+1000 TL maliyet ile 1300 TL satış fiyatı → %30 kar marjı
+</p>
+
+</div>
