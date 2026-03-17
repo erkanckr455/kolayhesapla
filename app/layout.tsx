@@ -3,7 +3,7 @@ import Link from "next/link"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "KolayHesapla",
+ title: "Hesap Uzmanı",
   description: "Kredi, faiz, KDV, enflasyon ve maaş hesaplama araçları"
 }
 
@@ -30,7 +30,7 @@ export default function RootLayout({
           <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
 
             <Link href="/" className="text-xl font-bold text-blue-600">
-              KolayHesapla
+              Hesap Uzmanı
             </Link>
 
             <nav className="flex gap-6 text-gray-700 font-medium">
