@@ -1,19 +1,20 @@
 import Link from "next/link"
 
 const hesaplamalar = [
-  { href: "/kredi-hesaplama", title: "Kredi Hesaplama", desc: "Aylık kredi taksitini öğren" },
-  { href: "/kdv-hesaplama", title: "KDV Hesaplama", desc: "KDV dahil fiyatı hesapla" },
-  { href: "/hisse-kar-zarar", title: "Hisse Kar/Zarar", desc: "Hisse kazancını hesapla" },
-  { href: "/faiz-hesaplama", title: "Faiz Hesaplama", desc: "Faiz getirini öğren" },
-  { href: "/yuzde-hesaplama", title: "Yüzde Hesaplama", desc: "Yüzde artış ve indirim hesapla" },
   { href: "/altin-hesaplama", title: "Altın Hesaplama", desc: "Gram altının değerini hesapla" },
+  { href: "/arac-km-maliyeti", title: "Araç KM Maliyeti", desc: "Araç yakıt maliyetini hesapla" },
   { href: "/dolar-hesaplama", title: "Dolar Hesaplama", desc: "Doların TL karşılığını hesapla" },
-  { href: "/maas-hesaplama", title: "Net Maaş", desc: "Brüt maaştan net maaşı hesapla" },
+  { href: "/emekli-maasi-hesaplama", title: "Emekli Maaşı", desc: "Zamlı emekli maaşını hesapla" },
   { href: "/enflasyon-hesaplama", title: "Enflasyon Hesaplama", desc: "Aylık enflasyon hesapla" },
+  { href: "/faiz-hesaplama", title: "Faiz Hesaplama", desc: "Faiz getirini öğren" },
+  { href: "/hisse-kar-zarar", title: "Hisse Kar/Zarar", desc: "Hisse kazancını hesapla" },
+  { href: "/kdv-hesaplama", title: "KDV Hesaplama", desc: "KDV dahil fiyatı hesapla" },
+  { href: "/kredi-hesaplama", title: "Kredi Hesaplama", desc: "Aylık kredi taksitini öğren" },
+  { href: "/maas-hesaplama", title: "Net Maaş", desc: "Brüt maaştan net maaşı hesapla" },
   { href: "/yas-hesaplama", title: "Yaş Hesaplama", desc: "Doğum tarihinize göre yaş hesapla" },
-  { href: "/arac-km-maliyeti", title: "Araç KM Maliyeti", desc: "1 km ve 100 km yakıt maliyetini hesapla" },
-  { href: "/emekli-maasi-hesaplama", title: "Emekli Maaşı Hesaplama", desc: "Zam oranına göre emekli maaşını hesapla" }
-].sort((a, b) => a.title.localeCompare(b.title, "tr"))
+  { href: "/yuzde-degisim-hesaplama", title: "Yüzde Değişim", desc: "İki sayı arasındaki yüzde değişimi hesapla" },
+  { href: "/yuzde-hesaplama", title: "Yüzde Hesaplama", desc: "Yüzde artış ve indirim hesapla" },
+]
 
 export default function Home() {
   return (
