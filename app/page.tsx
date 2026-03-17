@@ -25,11 +25,11 @@ export default function Home() {
         <div className="max-w-5xl mx-auto px-6 text-center">
 
           <h1 className="text-4xl font-bold mb-4">
-            HesapUzmani
+            Hesap Uzmanı
           </h1>
 
           <p className="text-lg text-blue-100">
-            Kredi, faiz, KDV, kira artışı ve günlük hesaplama araçları.
+            Hesap Uzmanı ile kredi, faiz, KDV, kira artışı ve birçok finansal hesaplamayı hızlı ve kolay şekilde yapabilirsiniz.
           </p>
 
         </div>
@@ -70,18 +70,18 @@ export default function Home() {
         <div className="bg-white rounded-xl shadow p-8">
 
           <h2 className="text-2xl font-bold mb-4">
-            Online Hesaplama Araçları
+            Hesap Uzmanı
           </h2>
 
           <p className="text-gray-700 mb-4">
-            HesapUzmani sitesi kredi hesaplama, faiz hesaplama, KDV hesaplama,
+            Hesap Uzmanı sitesi kredi hesaplama, faiz hesaplama, KDV hesaplama,
             kira artış hesaplama ve birçok finansal hesaplama aracını ücretsiz
             olarak sunar.
           </p>
 
           <p className="text-gray-700">
-            Hesaplama araçlarını kullanarak finansal planlamanızı kolayca
-            yapabilirsiniz.
+            Günlük hayatta ihtiyaç duyduğunuz finansal hesaplamaları hızlı ve
+            kolay şekilde yapabilirsiniz.
           </p>
 
         </div>
