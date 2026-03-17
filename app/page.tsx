@@ -8,6 +8,7 @@ const hesaplamalar = [
   { href: "/enflasyon-hesaplama", title: "Enflasyon Hesaplama", desc: "Aylık enflasyon hesapla" },
   { href: "/faiz-hesaplama", title: "Faiz Hesaplama", desc: "Faiz getirini öğren" },
   { href: "/hisse-kar-zarar", title: "Hisse Kar/Zarar", desc: "Hisse kazancını hesapla" },
+  { href: "/kar-marji-hesaplama", title: "Kar Marjı Hesaplama", desc: "Ürün maliyetine göre kar marjını hesapla" },
   { href: "/kdv-hesaplama", title: "KDV Hesaplama", desc: "KDV dahil fiyatı hesapla" },
   { href: "/kira-artis-hesaplama", title: "Kira Artış Hesaplama", desc: "Kira artış oranına göre yeni kira tutarını hesapla" },
   { href: "/kredi-hesaplama", title: "Kredi Hesaplama", desc: "Aylık kredi taksitini öğren" },
