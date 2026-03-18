@@ -346,6 +346,11 @@ export default function Page() {
                   Faiz Hesaplama
                 </a>
               </li>
+              <li>
+  <a href="/emekli-maasi-hesaplama" className="text-blue-600 hover:underline">
+    Emekli Maaşı Hesaplama
+  </a>
+</li>
             </ul>
           </section>
         </div>
