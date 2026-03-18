@@ -105,6 +105,11 @@ export default function Page() {
             </a>
           </li>
           <li>
+            <a href="/iskonto-hesaplama" className="text-blue-600 hover:underline">
+              İskonto Hesaplama
+            </a>
+          </li>
+          <li>
             <a href="/kar-zarar-hesaplama" className="text-blue-600 hover:underline">
               Kar / Zarar Hesaplama
             </a>
