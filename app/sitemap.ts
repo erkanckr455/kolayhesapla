@@ -1,13 +1,16 @@
 export default function sitemap() {
-  const baseUrl = "https://hesapuzmani.site"
+  const baseUrl = "https://www.hesapuzmani.site"
 
   return [
     { url: `${baseUrl}`, lastModified: new Date() },
 
     { url: `${baseUrl}/yuzde-hesaplama`, lastModified: new Date() },
+    { url: `${baseUrl}/yuzde-degisim-hesaplama`, lastModified: new Date() },
     { url: `${baseUrl}/kredi-hesaplama`, lastModified: new Date() },
     { url: `${baseUrl}/faiz-hesaplama`, lastModified: new Date() },
     { url: `${baseUrl}/kdv-hesaplama`, lastModified: new Date() },
+    { url: `${baseUrl}/iskonto-hesaplama`, lastModified: new Date() },
+
     { url: `${baseUrl}/altin-hesaplama`, lastModified: new Date() },
     { url: `${baseUrl}/dolar-hesaplama`, lastModified: new Date() },
     { url: `${baseUrl}/maas-hesaplama`, lastModified: new Date() },
