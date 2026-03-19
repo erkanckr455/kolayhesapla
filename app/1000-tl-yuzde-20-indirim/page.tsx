@@ -125,33 +125,28 @@ export default function Indirim1000Tl20Page() {
           </section>
 
           <section>
-            <h2 className="mb-3 text-2xl font-bold text-gray-900">
-              Benzer Hesaplamalar
-            </h2>
+  <h2 className="text-2xl font-bold text-gray-900 mb-3">
+    Benzer Hesaplamalar
+  </h2>
 
-            <ul className="ml-5 list-disc space-y-1">
-              <li>
-                <a href="/iskonto-hesaplama" className="text-blue-600 hover:underline">
-                  İskonto Hesaplama
-                </a>
-              </li>
-              <li>
-                <a href="/yuzde-hesaplama" className="text-blue-600 hover:underline">
-                  Yüzde Hesaplama
-                </a>
-              </li>
-              <li>
-                <a href="/yuzde-degisim-hesaplama" className="text-blue-600 hover:underline">
-                  Yüzde Değişim Hesaplama
-                </a>
-              </li>
-              <li>
-                <a href="/kdv-hesaplama" className="text-blue-600 hover:underline">
-                  KDV Hesaplama
-                </a>
-              </li>
-            </ul>
-          </section>
+  <ul className="list-disc ml-5 space-y-1 text-gray-700">
+    <li>
+      <a href="/500-tl-yuzde-30-indirim" className="text-blue-600 hover:underline">
+        500 TL %30 indirim ne kadar?
+      </a>
+    </li>
+    <li>
+      <a href="/2000-tl-yuzde-10-indirim" className="text-blue-600 hover:underline">
+        2000 TL %10 indirim ne kadar?
+      </a>
+    </li>
+    <li>
+      <a href="/15000-tl-yuzde-25-maas-zam" className="text-blue-600 hover:underline">
+        15000 TL %25 maaş zammı ne kadar?
+      </a>
+    </li>
+  </ul>
+</section>
 
           <section>
             <h2 className="mb-3 text-2xl font-bold text-gray-900">
