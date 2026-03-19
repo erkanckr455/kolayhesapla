@@ -2,6 +2,7 @@
 
 import Script from "next/script"
 import CalculatorLayout from "../components/CalculatorLayout"
+import RelatedCalculations from "../components/RelatedCalculations"
 
 export default function Indirim1000Tl20Page() {
   const faqSchema = {
