@@ -1,6 +1,7 @@
 "use client"
 
 import CalculatorLayout from "../components/CalculatorLayout"
+import RelatedCalculations from "../components/RelatedCalculations"
 
 export default function Page() {
   return (
@@ -111,6 +112,7 @@ export default function Page() {
         </section>
 
       </div>
+      <RelatedCalculations />
     </CalculatorLayout>
   )
 }
