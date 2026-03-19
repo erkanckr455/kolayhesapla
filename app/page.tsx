@@ -19,6 +19,13 @@ const hesaplamalar = [
   { href: "/yuzde-hesaplama", title: "Yüzde Hesaplama", desc: "Yüzde artış ve indirim hesapla" },
 ]
 
+const oneCikanHesaplamalar = [
+  { href: "/1000-tl-yuzde-20-indirim", title: "1000 TL %20 indirim ne kadar?" },
+  { href: "/500-tl-yuzde-30-indirim", title: "500 TL %30 indirim ne kadar?" },
+  { href: "/2000-tl-yuzde-10-indirim", title: "2000 TL %10 indirim ne kadar?" },
+  { href: "/15000-tl-yuzde-25-maas-zam", title: "15000 TL %25 maaş zammı ne kadar?" },
+]
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-gray-100">
@@ -58,7 +65,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="max-w-4xl mx-auto px-6 pb-16">
+      <section className="max-w-4xl mx-auto px-6 pb-8">
         <div className="bg-white rounded-xl shadow p-8">
           <h2 className="text-2xl font-bold mb-4">
             Hesap Uzmanı
@@ -74,6 +81,26 @@ export default function Home() {
             Günlük hayatta ihtiyaç duyduğunuz finansal hesaplamaları hızlı ve
             kolay şekilde yapabilirsiniz.
           </p>
+        </div>
+      </section>
+
+      <section className="max-w-4xl mx-auto px-6 pb-16">
+        <div className="bg-white rounded-xl shadow p-8">
+          <h2 className="text-xl font-bold mb-4">
+            Öne Çıkan Hesaplamalar
+          </h2>
+
+          <div className="flex flex-col gap-2">
+            {oneCikanHesaplamalar.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="text-blue-600 hover:underline"
+              >
+                {item.title}
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
     </main>
