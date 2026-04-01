@@ -20,27 +20,23 @@ export default function RootLayout({
   return (
     <html lang="tr">
       <head>
+        <meta
+          name="google-site-verification"
+          content="61I1FluLfb6uFFAPvARQrRSzesR_E69qdP0GjJIc2jc"
+        />
 
-        {/* GOOGLE SEARCH CONSOLE */}
-        <meta name="google-site-verification" content="61I1FluLfb6uFFAPvARQrRSzesR_E69qdP0GjJIc2jc" />
-
-        {/* GOOGLE ADSENSE */}
         <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7494215615753370"
           crossOrigin="anonymous"
         ></script>
 
-        {/* CANONICAL */}
         <link rel="canonical" href="https://www.hesapuzmani.site" />
-
       </head>
 
       <body className="bg-gray-100 flex flex-col min-h-screen">
-
         <header className="bg-white border-b">
           <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-
             <Link href="/" className="text-xl font-bold text-blue-600">
               Hesap Uzmanı
             </Link>
@@ -51,7 +47,6 @@ export default function RootLayout({
               <Link href="/hisse-kar-zarar">Hisse</Link>
               <Link href="/faiz-hesaplama">Faiz</Link>
             </nav>
-
           </div>
         </header>
 
@@ -61,10 +56,17 @@ export default function RootLayout({
 
         <footer className="bg-white border-t mt-10">
           <div className="max-w-6xl mx-auto px-4 py-6 text-center text-gray-600">
+            <div className="flex justify-center gap-6 mb-3 flex-wrap">
+              <Link href="/hakkimizda" className="hover:text-blue-600">
+                Hakkımızda
+              </Link>
 
-            <div className="flex justify-center gap-6 mb-3">
               <Link href="/iletisim" className="hover:text-blue-600">
                 İletişim
+              </Link>
+
+              <Link href="/sss" className="hover:text-blue-600">
+                SSS
               </Link>
 
               <Link href="/gizlilik-politikasi" className="hover:text-blue-600">
@@ -79,10 +81,8 @@ export default function RootLayout({
             <p className="text-sm">
               © {new Date().getFullYear()} HesapUzmani.site - Tüm hakları saklıdır.
             </p>
-
           </div>
         </footer>
-
       </body>
     </html>
   )
