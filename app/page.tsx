@@ -38,6 +38,14 @@ export default function Home() {
           <p className="text-lg text-blue-100">
             Hesap Uzmanı ile kredi, faiz, KDV, kira artışı ve birçok finansal hesaplamayı hızlı ve kolay şekilde yapabilirsiniz.
           </p>
+
+          {/* 🔥 YENİ EKLENEN LINK */}
+          <div className="mt-4">
+            <Link href="/hakkimizda" className="underline text-white">
+              Hakkımızda
+            </Link>
+          </div>
+
         </div>
       </section>
 
